@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout One</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #logo-div {
+        width: 100%;
+        height: 50px;
+        background-color: lightgrey;
+        text-align: center;
+        line-height: 50px;
+        margin-bottom: 10px;
+      }
+      #nav-div {
+        width: 100%;
+        height: 30px;
+        background-color: lightgray;
+        text-align: center;
+        line-height: 30px;
+        margin-bottom: 10px;
+      }
+      #header-banner-div {
+        width: 100%;
+        height: 100px;
+        background-color: aliceblue;
+        text-align: center;
+        line-height: 100px;
+        margin-bottom: 10px;
+      }
+      #main-div {
+        width: 100%;
+        /* min-height: 400px; */
+        /* background-color: gray; */
+        margin-bottom: 10px;
+      }
+      #sidebar-div {
+        width: 20%;
+        min-height: 500px;
+        background-color: rgb(169, 218, 234);
+        float: left;
+        text-align: center;
+        line-height: 500px;
+      }
+      #bodyarea-div {
+        width: 75%;
+        min-height: 500px;
+        background-color: rgb(148, 218, 228);
+        float: right;
+        text-align: center;
+        line-height: 500px;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      #footer-div {
+        width: 100%;
+        height: 100px;
+        background-color: rgb(142, 137, 137);
+        text-align: center;
+        line-height: 100px;
+      }
+      #wrapper-div {
+        width: 90%;
+        background: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper-div">
+      <div id="logo-div">Logo for layout one</div>
+      <div id="nav-div">Navigation one</div>
+      <div id="header-banner-div">Header/Banner</div>
+      <div id="main-div" class="clearfix">
+        <div id="sidebar-div">Sidebar</div>
+        <div id="bodyarea-div">Body Area</div>
+      </div>
+      <div id="footer-div">Footer One</div>
+    </div>
+  </body>
+</html>
